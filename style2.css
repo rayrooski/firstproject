@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, p, a {
   font-weight: normal;
 }
 
-div {
+div class {
   box-sizing: border-box;
 }
 
@@ -68,6 +68,34 @@ div {
 }
 
 .card_image {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.basketball {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.friends {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.family {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.web {
   width: 100%;
   margin-bottom: 25px;
   height: 200px;
