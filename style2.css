@@ -4,13 +4,19 @@
     url(./fonts/PermanentMarker.woff) format("woff");
 }
 
-body, h1, h2, h3, h4, p, a {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
   margin: 0;
   font-size: 100%;
   font-weight: normal;
 }
 
-div class {
+* {
   box-sizing: border-box;
 }
 
@@ -22,25 +28,19 @@ div class {
 .header {
   height: 100vh;
   background-image: url(./images/headshot.jpg);
-  background-size: auto;
-  background-position: auto;
-  text-align: center;
+  background-position: center;
+  background-size: cover;
 }
 
-.h1 {
+.header-title {
   font-family: 'Permanent Marker', cursive;
   font-size: 140px;
   line-height: 140px;
-  color: white;
+  color: blue;
   text-transform: uppercase;
   max-width: 1240px;
   margin: auto;
-}
-
-.h2 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 24px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 .overlay {
@@ -54,62 +54,48 @@ div class {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* add missing declarations */
   max-width: 790px;
   margin: 100px auto 50px;
 }
 
+/* add CSS rules for cards and their content here */
+
 .card {
   width: 350px;
-  font-size: 16px;
   margin-bottom: 60px;
   padding: 45px 45px 70px;
-  background: #ffffff;
-  box-shadow: 4px 4px 5px rgba(0 , 132, 255, 0.4);
+  background: #fff;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255, 0.4);
 }
 
-.card_image {
+.card-image {
   width: 100%;
   margin-bottom: 25px;
   height: 200px;
   object-fit: contain;
 }
 
-.basketball {
-  width: 100%;
-  margin-bottom: 25px;
-  height: 200px;
-  object-fit: contain;
+.card-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: blue;
 }
 
-.friends {
-  width: 100%;
-  margin-bottom: 25px;
-  height: 200px;
-  object-fit: contain;
-}
-
-.family {
-  width: 100%;
-  margin-bottom: 25px;
-  height: 200px;
-  object-fit: contain;
-}
-
-.web {
-  width: 100%;
-  margin-bottom: 25px;
-  height: 200px;
-  object-fit: contain;
+.card-text {
+  font-size: 16px;
 }
 
 .footer {
   display: flex;
+  /* add missing declarations */
   min-height: 300px;
   background-color: #000000;
+  font-size: 24px;
+  color: #ffffff;
+  margin: auto;
+  text-align: center;
 }
 
-.p {
-  font-size: 24px;
-  background-color: #ffffff;
-  margin: auto;
-}
+/* add a CSS rule for the footer signature */
